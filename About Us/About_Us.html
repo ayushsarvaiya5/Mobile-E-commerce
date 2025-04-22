@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta author="Ayush Sarvaiya, Rachit Parmar">
+    <title>About us</title>
+
+    <!--
+    - css link
+  -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../code_for_responsive.css">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!--
+    - favicon logos
+  -->
+    <link rel="shortcut icon" href="../assets/images/logo/favicon.ico" type="image/x-icon">
+
+    <!-- About Us Page Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./style_about_us.css">
+
+</head>
+
+<body>
+
+    <!--
+    - HEADER
+  -->
+
+    <header>
+
+        <div class="header-top">
+
+            <div class="container">
+
+                <ul class="header-social-container">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="header-alert-news">
+                    <p>
+                        <b>Free Shipping</b>
+                        This Week Order Over - &#8377;10,000
+                    </p>
+                </div>
+
+                <div class="header-top-actions">
+
+                    <select name="currency">
+
+                        <option value="eur">INR &#8377;</option>
+                        <option value="usd">USD &dollar;</option>
+
+                    </select>
+
+                    <select name="language">
+
+                        <option value="en-US">English</option>
+                        <option value="es-ES">Hindi</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="header-main">
+
+            <div class="container">
+
+                <a href="#" class="header-logo">
+                    <img src="../Logo/Logo.jpeg" alt="logo" width="180" height="60">
+                </a>
+
+                <div class="header-search-container">
+
+                    <form id="mobileForm" onsubmit="submitForm(event)">
+
+                        <input type="search" id="mobile" name="search" class="search-field"
+                            placeholder="Enter your Mobile name..." list="mobile_name" spellcheck="false">
+
+                        <button class="search-btn" type="submit">
+                            <ion-icon name="search-outline" onclick="submitForm(event)"></ion-icon>
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <div class="header-user-actions">
+
+                    <nav class="desktop-navigation-menu">
+
+                        <div class="container">
+                            <!-- desktop-menu-category-list-profile -->
+                            <ul class="desktop-menu-category-list">
+
+                                <li class="menu-category">
+
+                                    <button class="action-btn">
+                                        <ion-icon name="person-outline" class="menu-title"></ion-icon>
+                                    </button>
+                                    <!-- <a href="#" class="menu-title">Mobiles</a> -->
+
+                                    <div class="dropdown-panel-for-profile">
+
+                                        <ul class="dropdown-panel-list">
+
+                                            <li class="menu-title">
+                                                <a href="#">Profile</a>
+                                            </li>
+
+                                            <li class="panel-list-item">
+                                                <a href="#">Login</a>
+                                            </li>
+
+                                            <li class="panel-list-item">
+                                                <a href="#">Sinup</a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                </li>
+
+                                <li class="menu-category">
+                                    <button class="action-btn">
+                                        <ion-icon name="heart-outline" class="menu-title"></ion-icon>
+                                        <span class="count">0</span>
+                                    </button>
+                                    <!-- <a href="#" class="menu-title">About Us</a> -->
+                                </li>
+
+                                <li class="menu-category">
+                                    <button class="action-btn">
+                                        <ion-icon name="bag-handle-outline" class="menu-title"></ion-icon>
+                                        <span class="count">0</span>
+                                    </button>
+                                    <!-- <a href="#" class="menu-title">About Us</a> -->
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <nav class="desktop-navigation-menu">
+
+            <div class="container">
+
+                <ul class="desktop-menu-category-list">
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Home</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Mobiles</a>
+
+                        <div class="dropdown-panel">
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="#">iPhone</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">iPhone 15 Pro Max</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">iPhone 15 Pro</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">iPhone 15 Plus</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">iPhone 15</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Many More...</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="../Logo/iphone_logo.png" alt="iphone" id="img">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="#">OnePlus</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">OnePlus 12 5G</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">OnePlus Nord 3 5G</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">OnePlus 10 Pro</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">OnePlus Nord 2T</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Many More...</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="../Logo/OnePlus.png" alt="One plus" id="img">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="#">Samsung</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Samsung Galaxy S24</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Samsung Galaxy S23</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Samsung Galaxy M55</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Samsung Galaxy A14 5G</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Many More...</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="../Logo/samsung_logo_1.jpg" alt="Samsung" id="img">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="#">Vivo</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Vivo V29e</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Vivo T2 Pro</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Vivo Y200 5G</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Vivo Y73</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Many More...</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="../Logo/Vivo-Logo.png" alt="vivo" id="img">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">About Us</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Services</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Contact Us</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Hot Offers</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <!-- -->
+
+        <div class="mobile-bottom-navigation">
+
+            <button class="action-btn" data-mobile-menu-open-btn>
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <button class="action-btn">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+
+                <span class="count">0</span>
+            </button>
+
+            <button class="action-btn">
+                <ion-icon name="home-outline"></ion-icon>
+            </button>
+
+            <button class="action-btn">
+                <ion-icon name="heart-outline"></ion-icon>
+
+                <span class="count">0</span>
+            </button>
+
+            <button class="action-btn" data-mobile-menu-open-btn>
+                <ion-icon name="grid-outline"></ion-icon>
+            </button>
+
+        </div>
+
+        <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+            <div class="menu-top">
+                <h2 class="menu-title">Menu</h2>
+
+                <button class="menu-close-btn" data-mobile-menu-close-btn>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+
+            <ul class="mobile-menu-category-list">
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Home</a>
+                </li>
+
+
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">About Us</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Services</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Contact Us</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Hot Offers</a>
+                </li>
+
+            </ul>
+
+            <div class="menu-bottom">
+
+                <ul class="menu-category-list">
+
+                    <li class="menu-category">
+
+                        <button class="accordion-menu" data-accordion-btn>
+                            <p class="menu-title">Language</p>
+
+                            <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+                        </button>
+
+                        <ul class="submenu-category-list" data-accordion>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">English</a>
+                            </li>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">Hindi</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="menu-category">
+                        <button class="accordion-menu" data-accordion-btn>
+                            <p class="menu-title">Currency</p>
+                            <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+                        </button>
+
+                        <ul class="submenu-category-list" data-accordion>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">INR &#8377;</a>
+                            </li>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">USD &dollar;</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <ul class="menu-social-container">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main
+        style="background-image:url('../Logo/login-background.jpg'); background-size: cover; margin-top: 0px; padding-top: 0px; padding-bottom: 10px;">
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="col-12 mt-5 text-center">
+                    <span class="header" style="color: white;"><b>About Us</b></span>
+                </div>
+            </div>
+
+            <!--main content-->
+            <div class="row mt-5">
+                <div class="col-xl-6 col-lg-6 col-sm-12 text-center">
+                    <img src="../Logo/istockphoto-1356958235-612x612.jpg" class="header-part">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-sm-12 pt-5" style="font-weight: 600;">
+                    We get it. You're on the go, and finding the perfect phone shouldn't be a hassle. That's why we
+                    created <b>"Galaxy Mobile Shop"</b>, a mobile shop designed for busy people like you. We started
+                    with a simple
+                    idea: to offer a curated selection of top smartphones and accessories, all delivered straight to
+                    your door. We're passionate about tech and believe everyone deserves a phone that keeps up with
+                    their life.
+                </div>
+            </div>
+            <!--main content-->
+
+            <!--cards-->
+            <div class="row mt-5 mb-5">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
+                    <div class="card">
+                        <div class="card-header text-center">Expertise and Value</div>
+                        <div class="card-body"><img src="../Logo/about_us_image_2.jpg" height="200px" width="100%">
+                            <p class="pt-3">At our <b>"Galaxy Mobile Shop"</b>, we're not just salespeople. Our team is
+                                made up of
+                                mobile enthusiasts who understand the latest trends and can help you find the perfect
+                                device for your needs. Whether you're a photography buff, a gaming fanatic, or simply
+                                need a reliable daily driver, we'll guide you through the features and specs to ensure
+                                you get the best value for your money.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div class="card">
+                        <div class="card-header text-center">Convenience and Trust</div>
+                        <div class="card-body"><img src="../Logo/about_us_4.jpg" height="200px" width="100%">
+                            <p class="pt-3">We know your time is precious. That's why we offer a seamless shopping
+                                experience. Browse our user-friendly website, compare options, and place your order in
+                                minutes. We prioritize secure transactions and fast, reliable shipping so you can get
+                                your new phone in your hands ASAP.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12  mt-4 card-3">
+                    <div class="card">
+                        <div class="card-header text-center">Community and Future</div>
+                        <div class="card-body"><img src="../Logo/about_us_image_4.jpg" height="200px" width="100%">
+                            <p class="pt-3"> We're more than just a mobile shop; we're building a community. Stay tuned
+                                for our blog posts with tech reviews, helpful tips, and industry updates. We're here to
+                                empower you to make informed decisions and get the most out of your mobile experience.
+                                Join us on this journey into the future of mobile technology!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--cards-->
+        </div>
+    </main>
+
+    <!--
+    - FOOTER
+  -->
+
+    <footer>
+
+        <div class="footer-category">
+
+            <div class="container">
+
+                <div class="blog-container has-scrollbar">
+                    <h2 class="footer-category-title">Awailable Brands:</h2>
+
+                    <div class="footer-category-box">
+
+                        <div class="blog-card">
+
+                            <a href="#">
+                                <img src="../Logo/oneplus_logo.png" alt="oneplus_logo" class="blog-banner" width="100"
+                                    height="200px">
+                            </a>
+
+                            <div class="blog-content">
+
+                                <a href="#" class="blog-category">OnePlus</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer-category-box">
+                        <div class="blog-card">
+
+                            <a href="#">
+                                <img src="../Logo/Vivo-Logo.png" alt="vivo_logo" class="blog-banner" width="100"
+                                    height="200px">
+                            </a>
+
+                            <div class="blog-content">
+
+                                <a href="#" class="blog-category">Vivo</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-category-box">
+                        <div class="blog-card">
+
+                            <a href="#">
+                                <img src="../Logo/samsung_logo_1.jpg" alt="samsung_logo" class="blog-banner" width="100"
+                                    height="200px">
+                            </a>
+
+                            <div class="blog-content">
+
+                                <a href="#" class="blog-category">Samsung</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-category-box">
+                        <div class="blog-card">
+
+                            <a href="#">
+                                <img src="../Logo/iPhone_logo_2.jpeg" alt="iphone_logo" class="blog-banner" width="100"
+                                    height="200px">
+                            </a>
+
+                            <div class="blog-content">
+
+                                <a href="#" class="blog-category">iPhone</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-category-box">
+                        <div class="blog-card">
+
+                            <a href="#">
+                                <img src="../Logo/realme-logo.webp" alt="realme-logo" class="blog-banner" width="100"
+                                    height="200px" style="border: 2px solid white;">
+                            </a>
+
+                            <div class="blog-content">
+
+                                <a href="#" class="blog-category">Realme</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-nav">
+
+            <div class="container">
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Products</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Prices drop</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">New mobiles</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Best sales</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Contact us</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Sitemap</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Our Company</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Delivery</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Legal Notice</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Terms and conditions</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">About us</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Secure payment</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Services</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Prices drop</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">New mobiles</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Best sales</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Contact us</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Sitemap</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Contact</h2>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <address class="content">
+                            Birla Vishwkarma Mahavidhyalaya,
+                            Vallabh Vidhyanagar, Gujarat, INDIA, 388001
+                        </address>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+
+                        <a href="tel:+91 12345 67890" class="footer-nav-link">+91 12345 67890</a>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <a href="mailto:example@gmail.com" class="footer-nav-link">galaxymobile@gmail.com</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Follow Us</h2>
+                    </li>
+
+                    <li>
+                        <ul class="social-link">
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <img src="../Logo/payment.png" alt="payment method" class="payment-img">
+
+                <p class="copyright">
+                    Copyright &copy; <a href="#">Galaxy</a> all rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <!--
+    - js  file
+  -->
+    <script src="../script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="./script_signin_signup.js"></script>
+
+</body>
+
+</html>

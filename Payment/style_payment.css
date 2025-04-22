@@ -1,0 +1,167 @@
+a:hover {
+    text-decoration: none;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.show-me {
+    display: none
+}
+
+::placeholder {
+    font-size: 13px;
+}
+
+.show-for-front {
+    display: none;
+}
+
+.hide {
+    transform: translateX(170%);
+}
+
+.bill {
+    position: fixed
+}
+
+.cvv {
+    width: 100px
+}
+
+.date {
+    width: 200px;
+}
+
+.first {
+    width: 40%;
+    margin-left: 25%
+}
+
+.second {
+    width: 40%;
+    margin-left: 23%
+}
+
+.third {
+    width: 50%;
+}
+
+.text-left{
+    width: 200px;
+    margin-left: 0;
+    /* margin-right: auto; */
+}
+
+.image{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile_title{
+    font-size: 20px;
+    color: hsl(0, 100%, 70%);
+    margin: 10px;
+}
+
+.data{
+    margin: 10px;
+}
+
+.input{
+    /* margin-left: px; */
+    margin-right: 14px;
+}
+
+.alert{
+    color: red;
+    font-size: 25px;
+    padding-left: 33px;
+}
+
+.data1{
+    margin-right: 10px;
+}
+
+.data2{
+    margin-right: 10px;
+}
+
+@media screen and (max-width:1200px) {
+    img {
+        height: 150px
+    }
+
+    .bill {
+        position: relative;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .first {
+        width: 40%;
+        margin-left: 25%
+    }
+
+    .second {
+        width: 40%;
+        margin-left: 23%
+    }
+
+    .third {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .first {
+        width: 60%;
+        margin-left: 25%
+    }
+
+    .second {
+        width: 40%;
+        margin-left: 23%
+    }
+
+    .third {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .second {
+        width: 60%;
+        margin-left: 23%
+    }
+
+    .third {
+        width: 80%;
+    }
+
+    .cvv {
+        width: 40%
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .date {
+        border: 1px solid
+    }
+}
+
+@media screen and (max-width:320px) {
+    .cvv {
+        border: 1px solid
+    }
+
+    .card-number {
+        border: 1px solid
+    }
+}

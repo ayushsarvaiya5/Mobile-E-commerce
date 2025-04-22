@@ -1,0 +1,2693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta author="Ayush Sarvaiya, Rachit Parmar">
+    <title>Galaxy Mobile Shop - Homepage</title>
+
+    <!--
+    - css link
+  -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./code_for_responsive.css">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!--
+    - favicon logos
+  -->
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+    <div class="overlay" data-overlay></div>
+
+    <!--
+    - MODAL
+  -->
+
+    <div class="modal" data-modal>
+
+        <div class="modal-close-overlay" data-modal-overlay></div>
+
+        <div class="modal-content">
+
+            <button class="modal-close-btn" data-modal-close>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="newsletter-img">
+                <img src="./Logo/Subscibe us pic 2.jpg" alt="subscribe newsletter" width="400" height="400">
+            </div>
+
+            <div class="newsletter">
+
+                <form action="#">
+
+                    <div class="newsletter-header">
+
+                        <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+                        <p class="newsletter-desc">
+                            Subscribe the <b>Galaxy</b> to get latest Mobiles and discount update.
+                        </p>
+
+                    </div>
+
+                    <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+                    <button type="submit" class="btn-newsletter">Subscribe</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--
+    - HEADER
+  -->
+
+    <header>
+
+        <div class="header-top">
+
+            <div class="container">
+
+                <ul class="header-social-container">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="header-alert-news">
+                    <p>
+                        <b>Free Shipping</b>
+                        This Week Order Over - &#8377;10,000
+                    </p>
+                </div>
+
+                <div class="header-top-actions">
+
+                    <select name="currency">
+
+                        <option value="eur">INR &#8377;</option>
+                        <option value="usd">USD &dollar;</option>
+
+                    </select>
+
+                    <select name="language">
+
+                        <option value="en-US">English</option>
+                        <option value="es-ES">Hindi</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="header-main">
+
+            <div class="container">
+
+                <a href="#" class="header-logo">
+                    <img src="./Logo/Logo.jpeg" alt="logo" width="180" height="60">
+                </a>
+
+                <div class="header-search-container">
+
+                    <form id="mobileForm" onsubmit="submitForm(event)">
+
+                        <input type="search" id="mobile" name="search" class="search-field"
+                            placeholder="Enter your Mobile name..." list="mobile_name" spellcheck="false">
+
+                        <button class="search-btn" type="submit">
+                            <ion-icon name="search-outline" onclick="submitForm(event)"></ion-icon>
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <div class="header-user-actions">
+
+                    <nav class="desktop-navigation-menu">
+
+                        <div class="container">
+
+                            <ul class="desktop-menu-category-list">
+                    
+                                <li class="menu-category">
+                                    
+                                    <button class="action-btn">
+                                        <ion-icon name="person-outline" class="menu-title"></ion-icon>
+                                    </button>
+                    
+                                    <div class="dropdown-panel-for-profile">
+                    
+                                        <ul class="dropdown-panel-list">
+                    
+                                            <li class="menu-title">
+                                                <a href="#">Profile</a>
+                                            </li>
+                    
+                                            <li class="panel-list-item">
+                                                <a href="./Login Page/Login.html">Login</a>
+                                            </li>
+                    
+                                            <li class="panel-list-item">
+                                                <a href="./Login Page/Signup.html">Sinup</a>
+                                            </li>
+                
+                                        </ul>
+                                        
+                                    </div>
+                                </li>
+
+                                <li class="menu-category">
+                                    <button class="action-btn">
+                                        <ion-icon name="heart-outline" class="menu-title"></ion-icon>
+                                        <span class="count">0</span>
+                                    </button>
+                                </li>
+
+                                <li class="menu-category">
+                                    <button class="action-btn">
+                                        <ion-icon name="bag-handle-outline" class="menu-title"></ion-icon>
+                                        <span class="count">0</span>
+                                    </button>
+                                </li>
+                    
+                            </ul>
+                            
+                    
+                        </div>
+                    
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <nav class="desktop-navigation-menu">
+
+            <div class="container">
+
+                <ul class="desktop-menu-category-list">
+
+                    <li class="menu-category">
+                        <a href="./Mobile_Shop.html" class="menu-title">Home</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Mobiles</a>
+
+                        <div class="dropdown-panel">
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="#">iPhone</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">iPhone 15 Pro Max</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">iPhone 15 Pro</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">iPhone 15 Plus</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">iPhone 15</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Many More...</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="./Logo/iphone_logo.png" alt="iphone" id="img">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="#">OnePlus</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">OnePlus 12 5G</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">OnePlus Nord 3 5G</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">OnePlus 10 Pro</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">OnePlus Nord 2T</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Many More...</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="./Logo/OnePlus.png" alt="One plus" id="img">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="#">Samsung</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Samsung Galaxy S24</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Samsung Galaxy S23</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Samsung Galaxy M55</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Samsung Galaxy A14 5G</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Many More...</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="./Logo/samsung_logo_1.jpg" alt="Samsung" id="img">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="#">Vivo</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Vivo V29e</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Vivo T2 Pro</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Vivo Y200 5G</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Vivo Y73</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Many More...</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="./Logo/Vivo-Logo.png" alt="vivo" id="img">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="./About Us/About_Us.html" class="menu-title">About Us</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Services</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="./Login Page/Contact_us.html" class="menu-title">Contact Us</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Hot Offers</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <!-- -->
+
+        <div class="mobile-bottom-navigation">
+
+            <button class="action-btn" data-mobile-menu-open-btn>
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <button class="action-btn">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+
+                <span class="count">0</span>
+            </button>
+
+            <button class="action-btn">
+                <ion-icon name="home-outline"></ion-icon>
+            </button>
+
+            <button class="action-btn">
+                <ion-icon name="heart-outline"></ion-icon>
+
+                <span class="count">0</span>
+            </button>
+
+            <button class="action-btn" data-mobile-menu-open-btn>
+                <ion-icon name="grid-outline"></ion-icon>
+            </button>
+
+        </div>
+
+        <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+            <div class="menu-top">
+                <h2 class="menu-title">Menu</h2>
+
+                <button class="menu-close-btn" data-mobile-menu-close-btn>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+
+            <ul class="mobile-menu-category-list">
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Home</a>
+                </li>
+
+                
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">About Us</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Services</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Contact Us</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Hot Offers</a>
+                </li>
+
+            </ul>
+
+            <div class="menu-bottom">
+
+                <ul class="menu-category-list">
+
+                    <li class="menu-category">
+
+                        <button class="accordion-menu" data-accordion-btn>
+                            <p class="menu-title">Language</p>
+
+                            <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+                        </button>
+
+                        <ul class="submenu-category-list" data-accordion>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">English</a>
+                            </li>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">Hindi</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="menu-category">
+                        <button class="accordion-menu" data-accordion-btn>
+                            <p class="menu-title">Currency</p>
+                            <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+                        </button>
+
+                        <ul class="submenu-category-list" data-accordion>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">INR &#8377;</a>
+                            </li>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">USD &dollar;</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <ul class="menu-social-container">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+
+
+    <!--
+    - MAIN
+  -->
+
+    <main>
+
+        <!--
+      - BANNER
+    -->
+
+        <div class="banner">
+
+            <div class="container">
+                <div class="slider-container has-scrollbar">
+
+                    <div class="slider-item">
+
+                        <img src="./Logo/home 3_2.jpg" alt="Welcome to The Galaxy of Mobiles" class="banner-img">
+
+                        <div class="banner-content">
+
+                            <p class="banner-subtitle">Trending Mobiles</p>
+
+                            <h2 class="banner-title">Welcome to The Galaxy of Mobiles</h2>
+
+                            <p class="banner-text">
+                                starting at &#8377; <b>10,000</b>.00
+                            </p>
+
+                            <a href="#" class="banner-btn">Shop now</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!--
+            - CATEGORY
+        -->
+
+        <div class="category">
+
+            <div class="container">
+
+                <div class="category-item-container has-scrollbar">
+
+                    <div class="category-item">
+
+                        <div class="category-img-box">
+                            <img src="./Logo/iphone_logo.png" alt="iphone logo" width="120px">
+                        </div>
+
+                        <div class="category-content-box">
+
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">iphones</h3>
+
+                                <p class="category-item-amount">(32)</p>
+                            </div>
+
+                            <a href="#" class="category-btn">Show all</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="category-item">
+
+                        <div class="category-img-box">
+                            <img src="./Logo/One_plush_logo.png" alt="OnePlus logo" width="80px">
+                        </div>
+
+                        <div class="category-content-box">
+
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">OnePlus Mobile Phones</h3>
+
+                                <p class="category-item-amount">(68)</p>
+                            </div>
+
+                            <a href="#" class="category-btn">Show all</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="category-item">
+
+                        <div class="category-img-box">
+                            <img src="./Logo/Vivo-Logo.png" alt="Vivo logo" width="77px">
+                        </div>
+
+                        <div class="category-content-box">
+
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">Vivo Mobile Phones</h3>
+
+                                <p class="category-item-amount">(53)</p>
+                            </div>
+
+                            <a href="#" class="category-btn">Show all</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="category-item">
+
+                        <div class="category-img-box">
+                            <img src="./Logo/Asus_logo.png" alt="asus" width="105px">
+                        </div>
+
+                        <div class="category-content-box">
+
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">asus Mobile Phones</h3>
+
+                                <p class="category-item-amount">(47)</p>
+                            </div>
+
+                            <a href="#" class="category-btn">Show all</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="category-item">
+
+                        <div class="category-img-box">
+                            <img src="./Logo/realme-logo.webp" alt="realme" width="80px">
+                        </div>
+
+                        <div class="category-content-box">
+
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">Realme Mobile Phones</h3>
+
+                                <p class="category-item-amount">(61)</p>
+                            </div>
+
+                            <a href="#" class="category-btn">Show all</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="category-item">
+
+                        <div class="category-img-box">
+                            <img src="./Logo/Lava-Mobile-Logo.webp" alt="Lava-Mobile-Logo" width="140px">
+                        </div>
+
+                        <div class="category-content-box">
+
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">lava Mobiles</h3>
+
+                                <p class="category-item-amount">(58)</p>
+                            </div>
+
+                            <a href="#" class="category-btn">Show all</a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="category-item">
+
+                        <div class="category-img-box">
+                            <img src="./Logo/oppo-logo-big.png" alt="oppo" width="150px" height="80px">
+                        </div>
+
+                        <div class="category-content-box">
+
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">Oppo mobiles</h3>
+
+                                <p class="category-item-amount">(77)</p>
+                            </div>
+
+                            <a href="#" class="category-btn">Show all</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!--
+      - PRODUCT
+    -->
+
+        <div class="product-container">
+
+            <div class="container">
+
+
+                <!--
+          - SIDEBAR
+        -->
+
+                <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+                    <div class="sidebar-category">
+
+                        <div class="sidebar-top">
+                            <h2 class="sidebar-title">Category</h2>
+
+                            <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <ul class="sidebar-menu-category-list">
+
+                            <li class="sidebar-menu-category">
+
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                                    <div class="menu-title-flex">
+                                        <p class="menu-title">Brand</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">One Plus</p>
+                                            <data value="300" class="stock" title="Available Stock">53</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Vivo</p>
+                                            <data value="60" class="stock" title="Available Stock">46</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Apple</p>
+                                            <data value="50" class="stock" title="Available Stock">12</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Samsung</p>
+                                            <data value="87" class="stock" title="Available Stock">49</data>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="sidebar-menu-category">
+
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                                    <div class="menu-title-flex">
+                                        <p class="menu-title">RAM</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">2GB</p>
+                                            <data value="26" class="stock" title="Available Stock">26</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">4GB</p>
+                                            <data value="45" class="stock" title="Available Stock">45</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">6GB</p>
+                                            <data value="75" class="stock" title="Available Stock">75</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">8GB</p>
+                                            <data value="35" class="stock" title="Available Stock">35</data>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="sidebar-menu-category">
+
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                                    <div class="menu-title-flex">
+                                        <p class="menu-title">Storage</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">64GB</p>
+                                            <data value="46" class="stock" title="Available Stock">46</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">128GB</p>
+                                            <data value="73" class="stock" title="Available Stock">73</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">256GB</p>
+                                            <data value="61" class="stock" title="Available Stock">61</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">512GB</p>
+                                            <data value="61" class="stock" title="Available Stock">61</data>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="sidebar-menu-category">
+
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                                    <div class="menu-title-flex">
+                                        <p class="menu-title">Battery Capascity</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Upto 4000mah</p>
+                                            <data value="12" class="stock" title="Available Stock">12 pcs</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Upto 5000mah</p>
+                                            <data value="60" class="stock" title="Available Stock">60 pcs</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Upto 6000mah</p>
+                                            <data value="50" class="stock" title="Available Stock">50 pcs</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Above 6000mah</p>
+                                            <data value="87" class="stock" title="Available Stock">87 pcs</data>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="sidebar-menu-category">
+
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                                    <div class="menu-title-flex">
+                                        <p class="menu-title">Refresh Rate</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Up to 88 Hz</p>
+                                            <data value="68" class="stock" title="Available Stock">68</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">89 to 104 Hz</p>
+                                            <data value="46" class="stock" title="Available Stock">46</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">105 to 120 Hz</p>
+                                            <data value="79" class="stock" title="Available Stock">79</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name"> 121 Hz & above</p>
+                                            <data value="23" class="stock" title="Available Stock">23</data>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="sidebar-menu-category">
+
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                                    <div class="menu-title-flex">
+                                        <p class="menu-title">Mobile Phone Resolution</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">1080 x 1920</p>
+                                            <data value="50" class="stock" title="Available Stock">50</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">1080 x 2400</p>
+                                            <data value="48" class="stock" title="Available Stock">48</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">1600 x 720</p>
+                                            <data value="50" class="stock" title="Available Stock">50</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">1920 x 1080</p>
+                                            <data value="48" class="stock" title="Available Stock">48</data>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="sidebar-menu-category">
+
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                                    <div class="menu-title-flex">
+                                        <p class="menu-title">Display Type</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">AMOLED</p>
+                                            <data value="62" class="stock" title="Available Stock">62</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">LCD</p>
+                                            <data value="35" class="stock" title="Available Stock">35</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">OLED</p>
+                                            <data value="80" class="stock" title="Available Stock">80</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">LED</p>
+                                            <data value="80" class="stock" title="Available Stock">53</data>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="product-showcase">
+
+                        <h3 class="showcase-heading">Best Rated Mobiles</h3>
+
+                        <div class="showcase-wrapper">
+
+                            <div class="showcase-container">
+
+                                <div class="showcase">
+
+                                    <a href="#" class="showcase-img-box">
+                                        <img src="./Mobile_Photos/Vivo T2x 5G/Screenshot 2024-03-10 143035.png"
+                                            alt="Vivo T2x 5G" width="75" height="100" class="showcase-img">
+                                    </a>
+
+                                    <div class="showcase-content">
+
+                                        <a href="Product Page/product page.html">
+                                            <h4 class="showcase-title">Vivo T2x 5G</h4>
+                                        </a>
+
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+
+                                        <div class="price-box">
+                                            <del>&#8377;18,999</del>
+                                            <p class="price">&#8377;12,999</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="showcase">
+
+                                    <a href="#" class="showcase-img-box">
+                                        <img src="./Mobile_Photos/Apple iPhone 14/Screenshot 2024-03-10 143407.png"
+                                            alt="Apple iPhone 14" class="showcase-img" width="75" height="100">
+                                    </a>
+
+                                    <div class="showcase-content">
+
+                                        <a href="Product Page/product page.html">
+                                            <h4 class="showcase-title">iPhone 14</h4>
+                                        </a>
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-half-outline"></ion-icon>
+                                        </div>
+
+                                        <div class="price-box">
+                                            <del>&#8377;79,900</del>
+                                            <p class="price">&#8377;58,999</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="showcase">
+
+                                    <a href="#" class="showcase-img-box">
+                                        <img src="./Mobile_Photos/OPPO A59 5G/Screenshot 2024-03-10 143902.png"
+                                            alt="OPPO A59 5G" class="showcase-img" width="75" height="100">
+                                    </a>
+
+                                    <div class="showcase-content">
+
+                                        <a href="Product Page/product page.html">
+                                            <h4 class="showcase-title">OPPO A59 5G</h4>
+                                        </a>
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+
+                                        <div class="price-box">
+                                            <del>&#8377;19,999</del>
+                                            <p class="price">&#8377;13,999</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="product-box">
+
+                    <!--
+            - PRODUCT MINIMAL
+          -->
+
+                    <div class="product-minimal">
+
+                        <div class="product-showcase">
+
+                            <h2 class="title">New Arrivals</h2>
+
+                            <div class="showcase-wrapper has-scrollbar">
+
+                                <div class="showcase-container">
+
+                                    <div class="showcase">
+
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="./Mobile_Photos/IPhone 15 Pro Max/i.png"
+                                                alt="IPhone 15 Pro Max" width="120" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+
+                                            <a href="Product Page/product page.html">
+                                                <h4 class="showcase-title">IPhone 15 Pro Max</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Natural Titanium</a>
+
+                                            <div class="price-box">
+                                                <p class="price">&#8377;1,48,900</p>
+                                                <del>&#8377;1,59,900</del>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="showcase">
+
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="./Mobile_Photos/Vivo T2 Pro/Screenshot 2024-03-10 113446.png"
+                                                alt="Vivo T2 Pro" class="showcase-img" width="110">
+                                        </a>
+
+                                        <div class="showcase-content">
+
+                                            <a href="Product Page/product page.html">
+                                                <h4 class="showcase-title">Vivo T2 Pro</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Grey</a>
+
+                                            <div class="price-box">
+                                                <p class="price">&#8377;15,649</p>
+                                                <del>&#8377;23,999</del>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="showcase">
+
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="./Mobile_Photos/Vivo V29e/Vivo_V29e_1.jpg" alt="Vivo V29e"
+                                                class="showcase-img" width="115">
+                                        </a>
+
+                                        <div class="showcase-content">
+
+                                            <a href="Product Page/product page.html">
+                                                <h4 class="showcase-title">Vivo V29e</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Artistic RED</a>
+
+                                            <div class="price-box">
+                                                <p class="price">&#8377;24,699</p>
+                                                <del>&#8377;31,999</del>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="showcase">
+
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="./Mobile_Photos/Redmi A3/Screenshot 2024-03-10 131210.png"
+                                                alt="Redmi A3" class="showcase-img" width="105">
+                                        </a>
+
+                                        <div class="showcase-content">
+
+                                            <a href="Product Page/product page.html">
+                                                <h4 class="showcase-title">Redmi A3</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Olive Green</a>
+
+                                            <div class="price-box">
+                                                <p class="price">&#8377;17,299</p>
+                                                <del>&#8377;19,999</del>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-showcase">
+
+                            <h2 class="title">Trending</h2>
+
+                            <div class="showcase-wrapper  has-scrollbar">
+
+                                <div class="showcase-container">
+
+                                    <div class="showcase">
+
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="./Mobile_Photos/Samsung Galaxy S23//Screenshot 2024-03-10 114154.png"
+                                                alt="Samsung Galaxy S23" class="showcase-img" width="115">
+                                        </a>
+
+                                        <div class="showcase-content">
+
+                                            <a href="Product Page/product page.html">
+                                                <h4 class="showcase-title">Samsung G S23</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Purple</a>
+
+                                            <div class="price-box">
+                                                <p class="price">&#8377;54,999</p>
+                                                <del>&#8377;79,999</del>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="showcase">
+
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="./Mobile_Photos/OnePlus Nord 2T/Screenshot 2024-03-10 115500.png"
+                                                alt="OnePlus Nord 2T" class="showcase-img" width="109">
+                                        </a>
+
+                                        <div class="showcase-content">
+
+                                            <a href="Product Page/product page.html">
+                                                <h4 class="showcase-title">OnePlus Nord 2T</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Gray Shadow</a>
+
+                                            <div class="price-box">
+                                                <p class="price">&#8377;33,999</p>
+                                                <del>&#8377;39,000</del>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="showcase">
+
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="./Mobile_Photos/Vivo Y200 5G/Screenshot 2024-03-10 120851.png"
+                                                alt="Vivo Y200 5G" class="showcase-img" width="115">
+                                        </a>
+
+                                        <div class="showcase-content">
+
+                                            <a href="Product Page/product page.html">
+                                                <h4 class="showcase-title">Vivo Y200 5G</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Desert Gold</a>
+
+                                            <div class="price-box">
+                                                <p class="price">&#8377;23,999</p>
+                                                <del>&#8377;28,999</del>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="showcase">
+
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="./Mobile_Photos/Samsung Galaxy S24/Screenshot 2024-03-10 121417.png"
+                                                alt="Samsung G S24" class="showcase-img" width="124">
+                                        </a>
+
+                                        <div class="showcase-content">
+
+                                            <a href="Product Page/product page.html">
+                                                <h4 class="showcase-title">Samsung G S24</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Titanium Gray</a>
+
+                                            <div class="price-box">
+                                                <p class="price">&#8377;1,24,999</p>
+                                                <del>&#8377;1,39,999</del>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-showcase">
+
+                            <h2 class="title">Top Rated</h2>
+
+                            <div class="showcase-wrapper  has-scrollbar">
+
+                                <div class="showcase-container">
+
+                                    <div class="showcase">
+
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="./Mobile_Photos/OnePlus 10 Pro/Screenshot 2024-03-10 114518.png"
+                                                alt="OnePlus 10 Pro" class="showcase-img" width="114">
+                                        </a>
+
+                                        <div class="showcase-content">
+
+                                            <a href="Product Page/product page.html">
+                                                <h4 class="showcase-title">OnePlus 10 Pro</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Volcanic Black</a>
+
+                                            <div class="price-box">
+                                                <p class="price">&#8377;52,999</p>
+                                                <del>&#8377;39,999</del>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="showcase">
+
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="./Mobile_Photos/Samsung Galaxy M55/Screenshot 2024-03-10 115034.png"
+                                                alt="Samsung Galaxy M55" class="showcase-img" width="116">
+                                        </a>
+
+                                        <div class="showcase-content">
+
+                                            <a href="Product Page/product page.html">
+                                                <h4 class="showcase-title">Samsung G M55</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Deep Ocean Blue</a>
+
+                                            <div class="price-box">
+                                                <p class="price">&#8377;27,499</p>
+                                                <del>&#8377;32,999</del>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="showcase">
+
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="./Mobile_Photos/Redmi 13c/Screenshot 2024-03-10 135617.png"
+                                                alt="Redmi 13C" class="showcase-img" width="106">
+                                        </a>
+
+                                        <div class="showcase-content">
+
+                                            <a href="Product Page/product page.html">
+                                                <h4 class="showcase-title">Redmi 13C</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Stardust Black</a>
+
+                                            <div class="price-box">
+                                                <p class="price">&#8377;36,999</p>
+                                                <del>&#8377;41,999</del>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="showcase">
+
+                                        <a href="#" class="showcase-img-box">
+                                            <img src=".//Mobile_Photos/Samsung Galaxy A14 5G/Screenshot 2024-03-10 141120.png"
+                                                alt="Samsung Galaxy A14 5G" class="showcase-img" width="98">
+                                        </a>
+
+                                        <div class="showcase-content">
+
+                                            <a href="Product Page/product page.html">
+                                                <h4 class="showcase-title">Samsung Galaxy A14 5G</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Light Green</a>
+
+                                            <div class="price-box">
+                                                <p class="price">&#8377;15,999</p>
+                                                <del>&#8377;20,999</del>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!--
+            - PRODUCT FEATURED
+          -->
+
+                    <div class="product-featured">
+
+                        <h2 class="title">Deal of the day</h2>
+
+                        <div class="showcase-wrapper has-scrollbar">
+
+                            <div class="showcase-container">
+
+                                <div class="showcase">
+
+                                    <div class="showcase-banner">
+                                        <img src="./Mobile_Photos/OnePlus 12 5G/OnePlus_12_5G_1.jpg" alt="OnePlus 12 5G"
+                                            class="showcase-img">
+                                    </div>
+
+                                    <div class="showcase-content">
+
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+
+                                        <h3 class="showcase-title">
+                                            <a href="Product Page/product page.html" class="showcase-title">OnePlus 12 5G</a>
+                                        </h3>
+
+                                        <p class="showcase-desc">
+                                            Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                                            dolor dolor sit amet consectetur Lorem ipsum dolor
+                                        </p>
+
+                                        <div class="price-box">
+                                            <p class="price">&#8377;69,999</p>
+                                            <del>&#8377;79,999</del>
+                                        </div>
+
+                                        <button class="add-cart-btn">add to cart</button>
+
+                                        <div class="showcase-status">
+                                            <div class="wrapper">
+                                                <p> already sold: <b>15</b> </p>
+
+                                                <p> available: <b>40</b> </p>
+                                            </div>
+
+                                            <div class="showcase-status-bar"></div>
+                                        </div>
+
+                                        <div class="countdown-box">
+
+                                            <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+
+                                            <div class="countdown">
+                                                <div class="countdown-content">
+                                                    <p class="display-number">360</p>
+                                                    <p class="display-text">Days</p>
+                                                </div>
+
+                                                <div class="countdown-content">
+                                                    <p class="display-number">24</p>
+                                                    <p class="display-text">Hours</p>
+                                                </div>
+
+                                                <div class="countdown-content">
+                                                    <p class="display-number">59</p>
+                                                    <p class="display-text">Min</p>
+                                                </div>
+
+                                                <div class="countdown-content">
+                                                    <p class="display-number">00</p>
+                                                    <p class="display-text">Sec</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="showcase-container">
+
+                                <div class="showcase">
+
+                                    <div class="showcase-banner">
+                                        <img src="./Mobile_Photos/Samsung Galaxy S24/Screenshot 2024-03-28 162257.png"
+                                            alt="amsung Galaxy S24" class="showcase-img">
+                                    </div>
+
+                                    <div class="showcase-content">
+
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+
+                                        <a href="Product Page/product page.html">
+                                            <h3 class="showcase-title">Samsung Galaxy S24</h3>
+                                        </a>
+
+                                        <p class="showcase-desc">
+                                            Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                                            dolor dolor sit amet consectetur Lorem ipsum dolor
+                                        </p>
+
+                                        <div class="price-box">
+                                            <p class="price">&#8377;1,24,999</p>
+
+                                            <del>&#8377;1,39,999</del>
+                                        </div>
+
+                                        <button class="add-cart-btn">add to cart</button>
+
+                                        <div class="showcase-status">
+                                            <div class="wrapper">
+                                                <p>
+                                                    already sold: <b>20</b>
+                                                </p>
+
+                                                <p>
+                                                    available: <b>40</b>
+                                                </p>
+                                            </div>
+
+                                            <div class="showcase-status-bar"></div>
+                                        </div>
+
+                                        <div class="countdown-box">
+
+                                            <p class="countdown-desc">
+                                                Hurry Up! Offer ends in:
+                                            </p>
+
+                                            <div class="countdown">
+
+                                                <div class="countdown-content">
+
+                                                    <p class="display-number">360</p>
+
+                                                    <p class="display-text">Days</p>
+
+                                                </div>
+
+                                                <div class="countdown-content">
+                                                    <p class="display-number">24</p>
+                                                    <p class="display-text">Hours</p>
+                                                </div>
+
+                                                <div class="countdown-content">
+                                                    <p class="display-number">59</p>
+                                                    <p class="display-text">Min</p>
+                                                </div>
+
+                                                <div class="countdown-content">
+                                                    <p class="display-number">00</p>
+                                                    <p class="display-text">Sec</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!--
+            - PRODUCT GRID
+          -->
+
+                    <div class="product-main">
+
+                        <h2 class="title">New Products</h2>
+
+                        <div class="product-grid">
+
+                            <div class="showcase">
+
+                                <div class="showcase-banner">
+
+                                    <img src="./Mobile_Photos/Redmi Note 13 5G/Redmi Note 13 5G_1.jpg"
+                                        alt="Redmi Note 13 5G" width="300" class="product-img default">
+                                    <img src="./Mobile_Photos/Redmi Note 13 5G/Redmi Note 13 5G_1.jpg"
+                                        alt="Redmi Note 13 5G" width="300" class="product-img hover">
+
+                                    <p class="showcase-badge">15%</p>
+
+                                    <div class="showcase-actions">
+
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="showcase-content">
+
+                                    <a href="Product Page/product page.html" class="showcase-category">Redmi Note 13 5G</a>
+
+                                    <a href="#">
+                                        <h3 class="showcase-title">Arctic White, 6GB RAM, 128GB Storage</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">&#8377;17,999</p>
+                                        <del>&#8377;20,999</del>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="showcase">
+
+                                <div class="showcase-banner">
+                                    <img src="./Mobile_Photos/itel A70/itel A70_1.jpg" alt="itel A70"
+                                        class="product-img default" width="60">
+                                    <img src="./Mobile_Photos/itel A70/itel A70_1.jpg" alt="itel A70"
+                                        class="product-img hover" width="60">
+
+                                    <p class="showcase-badge angle black">sale</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="Product Page/product page.html" class="showcase-category">Itel A70</a>
+
+                                    <h3>
+                                        <a href="#" class="showcase-title">Azure Blue, 6GB RAM, 128GB Storage</a>
+                                    </h3>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">&#8377;15,999</p>
+                                        <del>&#8377;14,499</del>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="showcase">
+
+                                <div class="showcase-banner">
+                                    <img src="./Mobile_Photos/itel S23+/itel S23+_1.jpg" alt="itel S23+"
+                                        class="product-img default" width="300">
+                                    <img src="./Mobile_Photos/itel S23+/itel S23+_1.jpg" alt="itel S23+"
+                                        class="product-img hover" width="300">
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="Product Page/product page.html" class="showcase-category">Itel S23+</a>
+
+                                    <h3>
+                                        <a href="#" class="showcase-title">Elemental Blue, 16GRAM, 256GB ROM</a>
+                                    </h3>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">&#8377;13,999</p>
+                                        <del>&#8377;15,999</del>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="showcase">
+
+                                <div class="showcase-banner">
+                                    <img src="./Mobile_Photos/TECNO Pova 5 Pro 5G/TECNO Pova 5 Pro 5G.jpg"
+                                        alt="TECNO Pova 5 Pro 5G" class="product-img default" width="300">
+                                    <img src="./Mobile_Photos/TECNO Pova 5 Pro 5G/TECNO Pova 5 Pro 5G.jpg"
+                                        alt="TECNO Pova 5 Pro 5G" class="product-img hover" width="300">
+
+                                    <p class="showcase-badge angle pink">new</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="Product Page/product page.html" class="showcase-category">TECNO Pova 5 Pro 5G</a>
+
+                                    <h3>
+                                        <a href="#" class="showcase-title">Dark Illusion, 8GB RAM, 256GB ROM</a>
+                                    </h3>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">&#8377;16,999</p>
+                                        <del>&#8377;19,999</del>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="showcase">
+
+                                <div class="showcase-banner">
+                                    <img src="./Mobile_Photos/Lava Blaze 2 5G/Lava Blaze 2 5G.jpg" alt="Lava Blaze 2 5G"
+                                        class="product-img default" width="300">
+                                    <img src="./Mobile_Photos/Lava Blaze 2 5G/Lava Blaze 2 5G.jpg" alt="Lava Blaze 2 5G"
+                                        class="product-img hover" width="300">
+
+                                    <p class="showcase-badge angle black">sale</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="Product Page/product page.html" class="showcase-category">Lava Blaze 2 5G</a>
+
+                                    <h3>
+                                        <a href="#" class="showcase-title">Glass Lavender, 6GB RAM, 128GB ROM</a>
+                                    </h3>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">&#8377;26,999</p>
+                                        <del>&#8377;30,999</del>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="showcase">
+
+                                <div class="showcase-banner">
+                                    <img src="./Mobile_Photos/TECNO Spark 10C/TECNO Spark 10C.jpg" alt="ECNO Spark 10C"
+                                        class="product-img default" width="300">
+                                    <img src="./Mobile_Photos/TECNO Spark 10C/TECNO Spark 10C.jpg" alt="ECNO Spark 10C"
+                                        class="product-img hover" width="300">
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="Product Page/product page.html" class="showcase-category">TECNO Spark 10C</a>
+
+                                    <h3>
+                                        <a href="#" class="showcase-title">Skin Orange, 8GB RAM,128GB ROM</a>
+                                    </h3>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">&#8377;9,9999</p>
+                                        <del>&#8377;13,999</del>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="showcase">
+
+                                <div class="showcase-banner">
+                                    <img src="./Mobile_Photos/itel P55+ 4G/itel P55+ 4G.jpg" alt="itel P55+ 4G"
+                                        class="product-img default" width="300">
+                                    <img src="./Mobile_Photos/itel P55+ 4G/itel P55+ 4G.jpg" alt="itel P55+ 4G"
+                                        class="product-img hover" width="300">
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="Product Page/product page.html" class="showcase-category">itel P55+ 4G</a>
+
+                                    <h3>
+                                        <a href="#" class="showcase-title">Royal Green, 16GB RAM, 256GB ROM</a>
+                                    </h3>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">&#8377;14,999</p>
+                                        <del>&#8377;16,999</del>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="showcase">
+
+                                <div class="showcase-banner">
+                                    <img src="./Mobile_Photos/Redmi 12 5G/Redmi 12 5G.jpg" alt="Redmi 12 5G"
+                                        class="product-img default" width="300">
+                                    <img src="./Mobile_Photos/Redmi 12 5G/Redmi 12 5G.jpg" alt="Redmi 12 5G"
+                                        class="product-img hover" width="300">
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="Product Page/product page.html" class="showcase-category">Redmi 12 5G</a>
+
+                                    <h3>
+                                        <a href="#" class="showcase-title">Jade Black 6GB RAM 128GB ROM</a>
+                                    </h3>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">&#8377;14,999</p>
+                                        <del>&#8377;16,999</del>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+        <div>
+
+            <div class="container">
+
+                <div class="testimonials-box">
+
+                    <!--
+            - TESTIMONIALS
+          -->
+
+                    <div class="testimonial">
+
+                        <h2 class="title">testimonial</h2>
+
+                        <div class="testimonial-card">
+
+                            <img src="./Logo/1.png" alt="alan doe" class="testimonial-banner" width="80" height="80">
+
+                            <p class="testimonial-name">Ayush - Rachit</p>
+
+                            <p class="testimonial-title">CEO & Founder Invision</p>
+
+                            <img src="./Logo/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+                            <p class="testimonial-desc">
+                                Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                                dolor dolor sit amet.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <!--
+            - CTA
+          -->
+
+                    <div class="cta-container">
+
+                        <img src="./Logo/holi_3.jpg" alt="holi collection" class="cta-banner">
+
+                        <a href="#" class="cta-content">
+
+                            <p class="discount">5% Discount</p>
+
+                            <h2 class="cta-title">On Holi Festival</h2>
+                            <!-- Holi collection -->
+
+                            <p class="cta-text">Starting @ &#8377;1,00,000</p>
+
+                            <button class="cta-btn">Shop now</button>
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!--
+            - SERVICE
+          -->
+
+                    <div class="service">
+
+                        <h2 class="title">Our Services</h2>
+
+                        <div class="service-container">
+
+                            <a href="#" class="service-item">
+
+                                <div class="service-icon">
+                                    <ion-icon name="boat-outline"></ion-icon>
+                                </div>
+
+                                <div class="service-content">
+
+                                    <h3 class="service-title">Worldwide Delivery</h3>
+                                    <p class="service-desc">For Order Over &#8377;20,000</p>
+
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="service-item">
+
+                                <div class="service-icon">
+                                    <ion-icon name="rocket-outline"></ion-icon>
+                                </div>
+
+                                <div class="service-content">
+
+                                    <h3 class="service-title">Next Day delivery</h3>
+                                    <p class="service-desc">INDIA Orders Only</p>
+
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="service-item">
+
+                                <div class="service-icon">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </div>
+
+                                <div class="service-content">
+
+                                    <h3 class="service-title">Best Online Support</h3>
+                                    <p class="service-desc">Hours: 8AM - 11PM</p>
+
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="service-item">
+
+                                <div class="service-icon">
+                                    <ion-icon name="arrow-undo-outline"></ion-icon>
+                                </div>
+
+                                <div class="service-content">
+
+                                    <h3 class="service-title">Return Policy</h3>
+                                    <p class="service-desc">Easy & Free Return</p>
+
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="service-item">
+
+                                <div class="service-icon">
+                                    <ion-icon name="ticket-outline"></ion-icon>
+                                </div>
+
+                                <div class="service-content">
+
+                                    <h3 class="service-title">5% money back</h3>
+                                    <p class="service-desc">For Order Over &#8377;1,00,000</p>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+    <!--
+    - FOOTER
+  -->
+
+    <footer>
+
+        <div class="footer-category">
+
+            <div class="container">
+
+                <div class="blog-container has-scrollbar">
+                    <h2 class="footer-category-title">Awailable Brands:</h2>
+
+                    <div class="footer-category-box">
+
+                        <div class="blog-card">
+
+                            <a href="#">
+                                <img src="./Logo/oneplus_logo.png" alt="oneplus_logo" class="blog-banner" width="100"
+                                    height="200px">
+                            </a>
+
+                            <div class="blog-content">
+
+                                <a href="#" class="blog-category">OnePlus</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer-category-box">
+                        <div class="blog-card">
+
+                            <a href="#">
+                                <img src="./Logo/Vivo-Logo.png" alt="vivo_logo" class="blog-banner" width="100"
+                                    height="200px">
+                            </a>
+
+                            <div class="blog-content">
+
+                                <a href="#" class="blog-category">Vivo</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-category-box">
+                        <div class="blog-card">
+
+                            <a href="#">
+                                <img src="./Logo/samsung_logo_1.jpg" alt="samsung_logo" class="blog-banner" width="100"
+                                    height="200px">
+                            </a>
+
+                            <div class="blog-content">
+
+                                <a href="#" class="blog-category">Samsung</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-category-box">
+                        <div class="blog-card">
+
+                            <a href="#">
+                                <img src="./Logo/iPhone_logo_2.jpeg" alt="iphone_logo" class="blog-banner" width="100"
+                                    height="200px">
+                            </a>
+
+                            <div class="blog-content">
+
+                                <a href="#" class="blog-category">iPhone</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-category-box">
+                        <div class="blog-card">
+
+                            <a href="#">
+                                <img src="./Logo/realme-logo.webp" alt="realme-logo" class="blog-banner" width="100"
+                                    height="200px" style="border: 2px solid white;">
+                            </a>
+
+                            <div class="blog-content">
+
+                                <a href="#" class="blog-category">Realme</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-nav">
+
+            <div class="container">
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Products</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Prices drop</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">New mobiles</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Best sales</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Contact us</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Sitemap</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Our Company</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Delivery</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Legal Notice</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Terms and conditions</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">About us</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Secure payment</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Services</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Prices drop</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">New mobiles</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Best sales</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Contact us</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Sitemap</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Contact</h2>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <address class="content">
+                            Birla Vishwkarma Mahavidhyalaya,
+                            Vallabh Vidhyanagar, Gujarat, INDIA, 388001
+                        </address>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+
+                        <a href="tel:+91 12345 67890" class="footer-nav-link">+91 12345 67890</a>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <a href="mailto:example@gmail.com" class="footer-nav-link">galaxymobile@gmail.com</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Follow Us</h2>
+                    </li>
+
+                    <li>
+                        <ul class="social-link">
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <img src="./Logo/payment.png" alt="payment method" class="payment-img">
+
+                <p class="copyright">
+                    Copyright &copy; <a href="#">Galaxy</a> all rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <!--
+    - js  file
+  -->
+    <script src="./script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

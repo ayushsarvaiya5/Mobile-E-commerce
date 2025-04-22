@@ -1,0 +1,121 @@
+a:hover {
+    text-decoration: none;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.zooming-open,
+.zooming-open-1,
+.zooming-open-2,
+.zooming-open-3,
+.front-hide,
+.zooming-open-4 {
+    display: none;
+    /* padding-left: 100px; */
+}
+
+.zooming-open-head{
+    padding-left: 70px;
+}
+
+.zooming-open-3{
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.zooming-open-4{
+    padding-top: 35px;
+}
+
+.zooming-2 {
+    z-index: -1;
+    position: absolute;
+    opacity: 0.7;
+    width: 75%;
+    height: 55px
+}
+
+.zooming,
+.zooming-1,
+.zooming-3,
+.zooming-4,
+.zooming-5 {
+    width: 120%;
+    height: 70px;
+}
+
+.col-12 > ul > li{
+    list-style:disc;
+}
+
+.wm-zoom-box,
+.wm-zoom-container {
+    position: relative
+}
+
+img.wm-zoom-default-img {
+    height: auto
+}
+
+.wm-zoom-lens {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.wm-zoom-hight {
+    display: none;
+    overflow: hidden;
+    position: absolute
+}
+
+.wm-zoom-hight img {
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+img.wm-zoom-loader {
+    z-index: 1
+}
+
+img.wm-zoom-hight-img {
+    z-index: 2
+}
+
+.wm-zoom-lens {
+    background: #fff;
+    -moz-opacity: .3;
+    -khtml-opacity: .3;
+    opacity: .3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha"(Opacity=30);
+    filter: alpha(opacity=30)
+}
+
+.wm-zoom-hight {
+    background: #f4f4f4
+}
+
+.product-name{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.Specifications-title{
+    font-size: 25px;
+    width: 80%;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+.link{
+    cursor: pointer;
+}
